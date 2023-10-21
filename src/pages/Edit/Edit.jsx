@@ -46,7 +46,7 @@ const Edit = () => {
     form
       .validateFields()
       .then((values) => {
-        const currentIndex = parseInt(id, 10); // Convert to number
+        const currentIndex = parseInt(id, 10); 
         const updatedData = users.map((user, index) => (index === currentIndex - 1 ? { ...user, ...values } : user));
         AddStore('data', updatedData, localStorage);
         navigate('/');

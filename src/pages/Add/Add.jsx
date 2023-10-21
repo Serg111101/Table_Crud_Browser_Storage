@@ -33,7 +33,7 @@ const Add = () => {
 
   useEffect(() => {
     if (getFetchDataStorage('data', localStorage)) setOldData(getFetchDataStorage('data', localStorage));
-  }, [localStorage]);
+  }, []);
 
   const onDrop = (acceptedFiles) => {
     if (acceptedFiles.length > 0) {

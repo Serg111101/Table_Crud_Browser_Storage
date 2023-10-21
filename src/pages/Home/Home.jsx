@@ -15,7 +15,7 @@ const Home = () => {
       AddStore('data', [], localStorage)
     }
     dispatch(getFetchUsersData());
-  }, [dispatch, localStorage]);
+  }, [dispatch]);
   const { users } = useAppSelector((state) => state.users);
 
   const deleteUser = (ind) => {

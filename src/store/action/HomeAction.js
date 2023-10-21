@@ -1,4 +1,3 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getFetchDataStorage } from "../../hooks/LocalStorage";
 import { fetchErrorUsers, fetchSuccessUsers,  } from "../slice/userSlice";
 
